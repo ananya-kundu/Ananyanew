@@ -1,0 +1,24 @@
+<html>
+<body>
+<script type="text/javascript">
+class myDate extends Date{
+  constructor(){
+    super();
+
+  }
+  get(){
+    var da=new Date();
+    var x=da.getDate();
+    //document.write("Today's date :"+da);
+    //var y=
+    da.setDate(x+1);
+
+    document.write("Tomorrow's date : "+da);
+
+  }
+}
+var day=new myDate();
+day.get();
+</script>
+</body>
+</html>
