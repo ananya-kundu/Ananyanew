@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+function Person(first, last, age) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+
+}
+
+var ob1 = new Person("John", "Doe", 50);
+var ob2 = new Person("Sally", "Rally", 48);
+
+document.getElementById("demo").innerHTML =
+"1st Object is :   " +ob1.firstName+" "+ob1.lastName+" and "+ ob1.age + ".<br> 2nd Object is :   "+ob2.firstName+" "+ob2.lastName+" and " + ob2.age+ ".";
+
+function isEquality(ob1,ob2){
+  if(ob1 == ob2 || ob1 === ob2){
+    document.getElementById("demo1").innerHTML="Two objects are Equal";
+  }
+  else{
+    document.getElementById("demo1").innerHTML="Two objects are NOT Equal";
+  }
+
+}
+ isEquality(ob1,ob2);
+</script>
+
+</body>
+</html>
+
+
+
+
+</script>
+
+</body>
+</html>
