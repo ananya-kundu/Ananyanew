@@ -1,0 +1,57 @@
+<html>
+
+  <head>
+    <title>Prefix</title>
+    <div style="color:#0000FF">
+
+    <style>
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-top: 0.67em;
+      margin-bottom: 0.67em;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: center;
+
+    }
+      table, th, td {
+        width:70%;
+        margin-left:30%;
+        margin-right:30%;
+        border: 1px ;
+        text-decoration-color: white;
+        text-align: center;
+      }
+
+      body {
+        background-image: url("cal1.jpg");
+      }
+      </style>
+    </head>
+
+<body>
+  <h1 style="color:White;">Welcome to BridgeLabz</h1>
+  <div>
+    <form id="myform">
+    <table style="width:40%" >
+      <tr> <th><input type="text" id="firstNo" placeholder="Please write something.."></th>  <br><br></tr>
+
+      <tr> <th><button onclick="myFunction()">Try it</button> </th> </tr>
+    <tr><th><button onclick="myFunction1()" >Reset form</button></th></tr>
+  </form>
+    </div>
+
+
+    <script>
+    function myFunction() {
+        var x=document.getElementById("firstNo").value;
+        alert("BridgeLabz " +x);
+    }
+    function myFunction1() {
+    document.getElementById("myform").reset();
+}
+    </script>
+</body>
+</html>
