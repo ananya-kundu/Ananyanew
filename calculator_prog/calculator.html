@@ -1,0 +1,98 @@
+<html>
+<head>
+  <title> CALCULATOR </title>
+  <h3> CALCULATOR </h3>
+  <style>
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-top: 0.67em;
+      margin-bottom: 0.67em;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: center;
+
+    }
+      table, th, td {
+        width:70%;
+        margin-left:30%;
+        margin-right:30%;
+        border: 1px ;
+        text-decoration-color: white;
+        text-align: center;
+
+      }
+
+      body {
+        background-image: url("cal5.jpg");
+      }
+
+  </style>
+</head>
+
+<body>
+  <h1 style="color:White;">CALCULATOR</h1>
+  <table style="width:40%" >
+  <tr>
+
+    <th><input type="text" id="firstNo"  " placeholder="First Number"></th>
+    <br><br>
+  </tr>
+
+  <tr>
+
+    <th><input type="text" id="secondNo" placeholder="Second Number"></th>
+    <br><br>
+  </tr>
+  <br><br>
+
+  <tr>
+    <th><select id="symbol">
+        <option value="Addition">+</option>
+        <option selected="selected">Select Operator</option>
+        <option value="Subtraction">-</option>
+        <option value="Multiplication">*</option>
+        <option value="Divison">/</option>
+      </select>
+    </th>
+</tr>
+<tr>
+    <th>  <button type="button" onclick="calculator()">Submit</button>  </th>
+  </tr>
+    <tr>
+      <th><input type="text" text-align:"center" id="ans" placeholder="Result "></th>
+  </tr>
+
+</table>
+<script>
+function calculator()
+{
+  var x=parseInt(document.getElementById("firstNo").value);
+  var y=parseInt(document.getElementById("secondNo").value);
+  var z=document.getElementById("symbol").value;
+  var sum;
+  switch(z){
+    case "Addition":
+        sum = x+y;
+        break;
+    case "Subtraction":
+        sum = x-y;
+        break;
+   case "Multiplication":
+         sum = x*y;
+         break;
+  case "Divison":
+        sum = x/y;
+        break;
+    default:
+         sum=NaN;
+  }
+  document.getElementById("ans").value=sum;
+}
+
+
+</script>
+
+</body>
+</html>
