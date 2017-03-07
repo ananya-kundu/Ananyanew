@@ -1,0 +1,14 @@
+body{
+  background-color: Brown;
+  padding-top:100px;
+  text-align: center;
+}
+.ca{
+  color: black;
+  font-style: italic;
+}
+div{
+  margin: 10%;
+  background-color: rgb(255, 146, 142);
+  border: 1px solid black;
+}
