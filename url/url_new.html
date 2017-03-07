@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title> URL </title>
+    <h1> URL </h1>
+    <style>
+    body {
+      background-image: url("pic.jpg");
+    }
+    </style>
+  </head>
+
+<body>
+    <h1 style="color:White;">CALCULATOR</h1>
+    <p id="demo"></p>
+<script>
+  var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+  document.getElementById("demo").innerHTML = "<b>URL is : </b> " +newURL;
+</script>
+</body>
+
+</html>
