@@ -1,0 +1,27 @@
+<html>
+<head>
+  <h3> Student Details   </h3>
+<script>
+
+    // Called on body's `onload` event
+    function init() {
+        // Retrieving the text input's value which was stored into localStorage
+        var myName = localStorage.getItem("myName");
+        var myRoll = localStorage.getItem("myRoll");
+        var myAge = localStorage.getItem("myAge");
+        //var mytext1 = localStorage.getItem("mytext1");
+        //var mytext2 = localStorage.getItem("mytext2");
+        // Writing the value in the document"<br>");
+        document.write("Student name = "+myName+ "<br>");
+        document.write("Student Roll = "+myRoll+ "<br>");
+        document.write("Student Age = "+myAge+ "<br>");
+    }
+
+</script>
+</head>
+
+<body onload="init();">
+
+</body>
+
+</html>

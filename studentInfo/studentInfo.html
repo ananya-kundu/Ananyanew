@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>Test</title>
+    <div class="right">
+    <h3 style="color:White;"> <center>Student Information Form </h3>
+    </div>
+    <style>
+      body{
+        background-image: url("pic5.jpg");
+      }
+      .right{
+        float: right;
+        margin-right: 70%;
+      }
+      .right1{
+        float: right;
+        margin-right: 72%;
+      }
+    </style>
+    <script type="text/javascript">
+
+        // Called on form's `onsubmit`
+        function tosubmit() {
+            // Getting the value of your text input
+            var myName = document.getElementById("myName").value;
+            var myRoll = document.getElementById("myRoll").value;
+            var myAge = document.getElementById("myAge").value;
+            // Storing the value above into localStorage
+            localStorage.setItem("myName", myName);
+            localStorage.setItem("myRoll", myRoll);
+            localStorage.setItem("myAge", myAge);
+          /*  if(name_validation(myName)){
+              if(roll_validation(myRoll)){
+                if(age_validation(myAge)){
+                }
+              }
+            }*/
+          return true;
+        }
+
+        /*function name_validation(myName){
+          var letters = /^[A-Za-z]+$/;
+          if(myName==" " && myName.value.match(letters)){
+            return true;
+          }
+          else {
+            alert('Username must have alphabet characters only');
+          //  name.focus();
+            return false;
+         }
+        }
+        function roll_validation(myRoll){
+          //var numbers = /^[0-9]+$/;
+              if(myRoll>=1 && myRoll<=99999)  {
+              return true;
+            }
+            else  {
+                alert('RollNo must have numeric characters only');
+                //uzip.focus();
+                return false;
+              }
+        }
+        function age_validation(myAgel){
+          var numbers = /^[0-9]+$/;
+              if(myAge.value.match(numbers))  {
+              return true;
+            }
+            else  {
+                alert('Age must have numeric characters only');
+                //uzip.focus();
+                return false;
+              }
+        }*/
+
+        /*function validate(myName,myRoll,myAge) {
+            var letters = /^[A-Za-z]+$/;
+            var name = document.getElementById("myName");
+            var roll = document.getElementById("myRoll");
+            var age = document.getElementById("myAge");
+
+
+            if(name==" " && name.value.match(letters)){
+              return true;
+            }
+            else {
+              alert('Username must have alphabet characters only');
+            //  name.focus();
+              return false;
+           }
+
+           if (roll.checkValidity() == false) {
+             document.getElementById("demo").innerHTML = roll.validationMessage;
+           }
+           else {
+             alert('Roll must have number only');
+             //myAge.focus();
+             return false;
+           }
+
+
+
+           if (age.checkValidity() == false) {
+             document.getElementById("demo").innerHTML = age.validationMessage;
+           }
+           else {
+             alert('Age must have number only');
+             //myAge.focus();
+             return false;
+           }
+           return true;
+        }
+
+
+        //function validate(myName,myRoll,myAge){
+
+        //}*/
+
+    </script>
+</head>
+<body>
+  <p id="demo"></p>
+    <div class="right1">
+        <form name="myform" onSubmit="return tosubmit();" action="confirm.html">
+          <ul>
+            <input  id="myName" type="text" name="StudentName" placeholder="Enter Student Name " required>  <br><br>
+            <input  id="myRoll" type="number" name="StudentRoll" placeholder="Enter Student RollNo " required>  <br><br>
+            <input  id="myAge" type="number" name="Student Age" placeholder="Enter Student Age" required><br><br>
+            <input type="submit" value="Submit">
+          </ul>
+        </form>
+      </div>
+</body>
+</html>
