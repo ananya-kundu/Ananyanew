@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title> ShoppingList </title>
+    <style>
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-top: 0.67em;
+      margin-bottom: 0.67em;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: center;
+    }
+    table, th, td {
+      width:70%;
+      margin-left:30%;
+      margin-right:30%;
+      border: 1px ;
+      text-decoration-color: white;
+      text-align: center;
+
+    }
+
+    body {
+      background-image: url("pic001.jpg");
+    }
+    </style>
+</head>
+
+<body>
+  <h1 style="color:Blue;">ShoppingList</h1>
+<p id="a01"></p>
+<center>
+<input type="button" value="push" onClick="push1()" />
+<input type="button" value="pop" onClick="pop1()" />
+<input type="button" value="shift" onClick="shift1()" />
+<input type="button" value="unshift" onClick="unshift1()" /><br><br><br>
+
+  <tr>
+    <th><input type="text" id="firstvalue"  " placeholder="Enter one data"></th>
+    <br><br>
+  </tr>
+  <tr>
+    <th><input type="number" id="secondNo"  " placeholder="Enter one value"></th>
+    <br><br>
+  </tr>
+  <tr>
+
+    <p id='print' ></p>
+  </tr>
+</table>
+
+  <script>
+  var mylist = [["Banana",10], ["Orange",20],["Apple",30] ,["Mango",40] ];
+  document.getElementById("a01").innerHTML = mylist.toString();
+  function push1() {
+    var a=document.getElementById("firstvalue").value;
+    var b=document.getElementById("secondNo").value;
+    console.log(a);
+    console.log(b);
+    mylist.push([a,b]);
+    document.getElementById('print').innerHTML=mylist;
+}
+function pop1(){
+  var a=document.getElementById("firstvalue").value;
+  var b=document.getElementById("secondNo").value;
+  console.log(a);
+  console.log(b);
+  mylist.pop([a,b]);
+  document.getElementById('print').innerHTML=mylist;
+}
+function shift1(){//delete 1st element
+  var a=document.getElementById("firstvalue").value;
+  var b=document.getElementById("secondNo").value;
+  console.log(a);
+  console.log(b);
+  mylist.shift([a,b]);
+  document.getElementById('print').innerHTML=mylist;
+
+}
+function unshift1(){ //add at the 1st position
+  var a=document.getElementById("firstvalue").value;
+  var b=document.getElementById("secondNo").value;
+  console.log(a);
+  console.log(b);
+  mylist.unshift([a,b]);
+  document.getElementById('print').innerHTML=mylist;
+}
+  </script>
+</body>
+</html>
