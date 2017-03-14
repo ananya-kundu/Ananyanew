@@ -1,0 +1,76 @@
+<html>
+<script src="vehicle.js"></script>
+    <head>
+    <title> Vehicle </title>
+        <style>
+          input[Type=Text]{
+              width: 90%;
+              padding-bottom: 10px;
+              padding-top: 10px;
+              margin-bottom: 25px;
+              border-color: #ff0800;
+            }
+            input[Type=Number]{
+              width: 90%;
+              padding-bottom: 10px;
+              padding-top: 10px;
+              margin-bottom: 25px;
+              border-color: #ff0800;
+            }
+            input[Type=Button]{
+              background-color: rgba(121, 94, 30, 0.75);
+              width: 25%;
+              padding-bottom: 10px;
+              padding-top: 10px;
+              margin-bottom: 25px;
+              border-color: #441800;
+            }
+            body{
+              background-image: url(car4.jpg);
+            }
+            .container-1
+            {
+              text-align: center;
+              color: black;
+              border: 5px solid black;
+              margin-bottom: 25px;
+              padding-top: 3%;
+            }
+            .result
+            {
+              text-align: center;
+              color: white;
+              margin-bottom: 25px;
+              padding-top: 3%;
+            }
+              div {
+                border-radius: 5px;
+                padding: 20px;
+            }
+        </style>
+  </head>
+  <body>
+        <form class=""  method="" name="">
+        <div class="container-1">
+        <h2>Vehicle Details</h2>
+        <input type="text" id="type" name="Enter Vehicle Type" value="" placeholder="Enter Type Of Vehicle">
+        <input type="number" id="speed" name="speed" value="" placeholder="Enter Speed Of Vehicle">
+        <input type="number" id="displacement" name="displacement" value="" placeholder="Enter Displacment of Vehicle">
+        <input type="button" onclick="vehicleObj()" name=""  value="create vehicle object">
+
+      <div><hr>
+
+      <div class="container-3">
+      <input type="number" id="newsp" name="" value="" placeholder="Enter New Speed">
+      <input type="button" onclick="setSpeed()" name=""  value="set speed ">
+      <input type="button" onclick="getSpeed()" name=""  value="get speed ">
+      <div>
+      <div class="result">
+        <p id="output0"></p>
+        <p id="output1"></p>
+        <p id="output2"></p>
+        <p id="output3"></p>
+      </div>
+  </form>
+  </body>
+</html>
