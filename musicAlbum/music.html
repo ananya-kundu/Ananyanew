@@ -1,0 +1,65 @@
+<html>
+<script src="music.js"></script>
+<head>
+  <title> musicAlbum </title>
+  <h2> <center>Music Album </h2>
+  <style>
+    h1 {
+      display: block;
+      font-size: 2em;
+      margin-top: 0.67em;
+      margin-bottom: 0.67em;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: left;
+
+    }
+      table, th, td {
+        width:50%;
+        margin-left:30%;
+        margin-right:30%;
+        border: 1px ;
+        text-decoration-color: white;
+        text-align: center;
+
+      }
+
+      body {
+        image-resolution: 50%;
+        background-image: url("pic19.jpg");
+      }
+
+  </style>
+</head>
+<body>
+  <div>
+
+  <table style="width:40%" >
+  <tr>
+
+    <th><input type="number" id="id1" placeholder="Enter Album id "></th>
+    <br><br><br>
+  </tr>
+
+  <tr>
+    <th><input type="text" id="prop1" placeholder="Enter Artist Name "></th>
+    <br><br><br>
+  </tr>
+  <tr>
+    <th><input type="text" id="value1" placeholder="Enter the value "></th>
+    <br><br><br>
+  </tr>
+  <tr>
+      <th>  <button type="button" onclick="update()">Submit</button>  </th>
+    </tr>
+    <tr>
+    <h1 id = "demo"></h1>
+  </tr>
+</div>
+  <div>
+    <h4><center> <p id='output'></p></h4>
+
+    <//div>
+</body>
+</html>
