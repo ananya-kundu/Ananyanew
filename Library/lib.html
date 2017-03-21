@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<script src="lib.js"></script>
+<head>
+  <title> book library </title>
+  <h2> <center>LIBRARY </h2>
+    <style>
+    * {
+    box-sizing: border-box;
+  }
+
+  .columns {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+ body{
+    background-image: url(lib3.jpg);
+  }
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(169, 14, 14, 0.73);
+  }
+
+  .price .header {
+    background-color: rgba(81, 1, 130, 0.51);
+    color: white;
+    font-size: 25px;
+  }
+
+  .price li {
+    border-bottom: 1px solid #ca1010;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(108, 111, 2, 0.22);
+  }
+
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+
+  .button {
+    background-color: rgba(36, 1, 74, 0.61);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+
+@media only screen and (max-width: 1000px) {
+    .columns {
+        width: 100%;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <body>
+      <div id="overLay"></div>
+      <div class="popupBox" id="myPopup">
+        <ul class="" id="output">
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="price" id="addlist">
+          <center><h3 class="header">Books List</h3></center>
+          <li id="pos"></li>
+            <center><input type="button" class="button" name="" onclick="display()" value="Books List"></center>
+          </li>
+        </ul>
+
+      </div>
+  </body>
+  </html>
